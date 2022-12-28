@@ -15,9 +15,8 @@ class SerialCommand{
       bautRate=b;
     }
     void send(String m,String a,String d1,String d2,String d3){
-          String senddata="#"m+"*"+a+"*"+d1+"*"+d2+"*"+d3+"&";
+          String senddata="#"+m+"*"+a+"*"+d1+"*"+d2+"*"+d3+"&";
           Serial.print(senddata);
- 
     }
     void read(){
       modul="";
